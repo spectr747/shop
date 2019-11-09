@@ -60,7 +60,7 @@
                         <div class="col-sm-8">
                             <div class="shop-menu pull-right">
                                 <ul class="nav navbar-nav">                                    
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i> Корзина</a></li>
+                                    <li><a href="/cart/"><i class="fa fa-shopping-cart"></i> Корзина</a></li>
                                     <li><a href="#"><i class="fa fa-user"></i> Аккаунт</a></li>
                                     <li><a href="#"><i class="fa fa-lock"></i> Вход</a></li>
                                 </ul>
@@ -84,16 +84,16 @@
                             </div>
                             <div class="mainmenu pull-left">
                                 <ul class="nav navbar-nav collapse navbar-collapse">
-                                    <li><a href="#">Главная</a></li>
+                                    <li><a href="/">Главная</a></li>
                                     <li class="dropdown"><a href="#">Магазин<i class="fa fa-angle-down"></i></a>
                                         <ul role="menu" class="sub-menu">
-                                            <li><a href="#">Каталог товаров</a></li>
-                                            <li><a href="#">Корзина</a></li> 
+                                            <li><a href="/catalog/">Каталог товаров</a></li>
+                                            <li><a href="/cart/">Корзина</a></li> 
                                         </ul>
                                     </li> 
-                                    <li><a href="#">Блог</a></li> 
-                                    <li><a href="#">О магазине</a></li>
-                                    <li><a href="#">Контакты</a></li>
+                                    <li><a href="/blog/">Блог</a></li> 
+                                    <li><a href="/about/">О магазине</a></li>
+                                    <li><a href="/contacts/">Контакты</a></li>
                                 </ul>
                             </div>
                         </div>

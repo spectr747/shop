@@ -5,12 +5,14 @@
         <group>
             <file>file:/C:/wamp64/www/views/site/index.php</file>
             <file>file:/C:/wamp64/www/controllers/SiteController.php</file>
-            <file>file:/C:/wamp64/www/controllers/BlogController.php</file>
-            <file>file:/C:/wamp64/www/index.php</file>
+            <file>file:/C:/wamp64/www/views/layouts/header.php</file>
+            <file>file:/C:/wamp64/www/components/Db.php</file>
             <file>file:/C:/wamp64/www/config/db_params.php</file>
             <file>file:/C:/wamp64/www/config/routes.php</file>
-            <file>file:/C:/wamp64/www/components/Router.php</file>
-            <file>file:/C:/wamp64/www/.htaccess</file>
+            <file>file:/C:/wamp64/www/models/Blog.php</file>
+            <file>file:/C:/wamp64/www/views/product/view.php</file>
+            <file>file:/C:/wamp64/www/models/Category.php</file>
+            <file>file:/C:/wamp64/www/views/layouts/footer.php</file>
         </group>
     </open-files>
 </project-private>
