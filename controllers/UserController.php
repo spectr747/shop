@@ -82,4 +82,13 @@ class UserController
         return true;
     }
     
+    /**
+     * Удалаяем данные о пользователе из сессии
+     */
+    public function actionLogout() 
+    {
+        unset($_SESSION["user"]);
+        header("Location: /");
+    }
+    
 }

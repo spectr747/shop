@@ -54,15 +54,19 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="logo pull-left">
-                                <a href="index.html"><img src="/template/images/home/logo.png" alt="" /></a>
+                                <a href="/"><img src="/template/images/home/logo.png" alt="" /></a>
                             </div>
                         </div>
                         <div class="col-sm-8">
                             <div class="shop-menu pull-right">
                                 <ul class="nav navbar-nav">                                    
                                     <li><a href="/cart/"><i class="fa fa-shopping-cart"></i> Корзина</a></li>
-                                    <li><a href="/cabinet/"><i class="fa fa-user"></i> Аккаунт</a></li>
-                                    <li><a href="/user/login/"><i class="fa fa-lock"></i> Вход</a></li>
+                                    <?php if (User::isGuest()): ?>
+                                        <li><a href="/user/login/"><i class="fa fa-lock"></i> Вход</a></li>
+                                    <?php else: ?>
+                                        <li><a href="/cabinet/"><i class="fa fa-user"></i> Аккаунт</a></li>
+                                        <li><a href="/user/logout/"><i class="fa fa-unlock"></i> Выход</a></li>
+                                    <?php endif; ?>    
                                 </ul>
                             </div>
                         </div>
