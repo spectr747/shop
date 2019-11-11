@@ -32,8 +32,8 @@
                         <div class="col-sm-6">
                             <div class="contactinfo">
                                 <ul class="nav nav-pills">
-                                    <li><a href="#"><i class="fa fa-phone"></i> +38 093 000 11 22</a></li>
-                                    <li><a href="#"><i class="fa fa-envelope"></i> zinchenko.us@gmail.com</a></li>
+                                    <li><a href="#"><i class="fa fa-phone"></i> +11 222 333 44 55</a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i> contacts@contacts.contacts</a></li>
                                 </ul>
                             </div>
                         </div>

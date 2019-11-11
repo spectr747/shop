@@ -44,7 +44,8 @@
                                     </p>
                                     <a href="#" data-id="<?php echo $product['id']; ?>"
                                        class="btn btn-default add-to-cart">
-                                        <i class="fa fa-shopping-cart"></i>В корзину</a>
+                                        <i class="fa fa-shopping-cart"></i>В корзину
+                                    </a>
                                 </div>
                                 <?php if ($product['is_new']): ?>
                                     <img src="/template/images/home/new.png" class="new" alt="" />
