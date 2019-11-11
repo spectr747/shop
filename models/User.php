@@ -142,21 +142,24 @@ class User
     
     /**
      * Редактирование данных пользователя
-     * @param string $name
-     * @param string $password
+     * @param integer $id <p>id пользователя</p>
+     * @param string $name <p>Имя</p>
+     * @param string $password <p>Пароль</p>
+     * @return boolean <p>Результат выполнения метода</p>
      */
-    public static function edit($id, $name, $password) 
+    public static function edit($id, $name, $password)
     {
+        // Соединение с БД
         $db = Db::getConnection();
-        
-        $sql = 'UPDATE user '
-                . 'SET name = :name, password = :password, role = ""'
-                . 'WHERE id = :id';
-        
+        // Текст запроса к БД
+        $sql = "UPDATE user 
+            SET name = :name, password = :password 
+            WHERE id = :id";
+        // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
         $result->bindParam(':id', $id, PDO::PARAM_INT);
         $result->bindParam(':name', $name, PDO::PARAM_STR);
         $result->bindParam(':password', $password, PDO::PARAM_STR);
-        $result->execute();
+        return $result->execute();
     }
 }

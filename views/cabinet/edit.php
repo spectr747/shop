@@ -1,33 +1,35 @@
-<?php include_once ROOT . '/views/layouts/header.php'; ?>
+<?php include ROOT . '/views/layouts/header.php'; ?>
 
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-sm-offset-4 padding-right">
+
+            <div class="col-sm-4 col-sm-offset-4 padding-right">
+                
                 <?php if ($result): ?>
-                    <p>Данные отредактированы</p>
+                    <p>Данные отредактированы!</p>
                 <?php else: ?>
                     <?php if (isset($errors) && is_array($errors)): ?>
                         <ul>
                             <?php foreach ($errors as $error): ?>
                                 <li> - <?php echo $error; ?></li>
-                            <?php endforeach; ?>    
+                            <?php endforeach; ?>
                         </ul>
                     <?php endif; ?>
 
-                    <div class="signup-form"><!-- sign up form -->
+                    <div class="signup-form"><!--sign up form-->
                         <h2>Редактирование данных</h2>
                         <form action="#" method="post">
                             <p>Имя:</p>
-                            <input type="name" name="name" placeholder="Имя" value="<?php echo $name; ?>"/>
-
+                            <input type="text" name="name" placeholder="Имя" value="<?php echo $name; ?>"/>
+                            
                             <p>Пароль:</p>
                             <input type="password" name="password" placeholder="Пароль" value="<?php echo $password; ?>"/>
                             <br/>
-                            <input type="submit" name="submit" class="btn btn-default" value="Сохранить"/>
-                        </form>                        
-                    </div><!-- sign up form -->
-
+                            <input type="submit" name="submit" class="btn btn-default" value="Сохранить" />
+                        </form>
+                    </div><!--/sign up form-->
+                
                 <?php endif; ?>
                 <br/>
                 <br/>
@@ -36,4 +38,4 @@
     </div>
 </section>
 
-<?php include_once ROOT . '/views/layouts/footer.php'; ?>
+<?php include ROOT . '/views/layouts/footer.php'; ?>
