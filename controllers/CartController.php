@@ -12,4 +12,11 @@ class CartController {
         header("Location: $referrer");
     }
     
+    public function actionAddAjax($id) 
+    {
+        // Добавляем товар в корзину
+        echo Cart::addProduct($id);
+        return true;
+    }
+    
 }
