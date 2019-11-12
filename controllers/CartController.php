@@ -41,4 +41,16 @@ class CartController {
         
         return true;
     }
+    
+    /**
+     * Action для добавления товара в корзину синхронным запросом
+     * @param integer $id <p>id товара</p>
+     */
+    public function actionDelete($id)
+    {
+        // Удаляем заданный товар из корзины
+        Cart::deleteProduct($id);
+        // Возвращаем пользователя в корзину
+        header("Location: /cart");
+    }
 }
