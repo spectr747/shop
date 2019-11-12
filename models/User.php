@@ -133,8 +133,8 @@ class User
     } 
     
     /**
-     * Returns user by id
-     * @param integer $id
+     * Возвращает пользователя с указанным id
+     * @param integer $id id пользователя
      */
     public static function getUserById($id) 
     {

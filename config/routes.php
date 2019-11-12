@@ -20,6 +20,8 @@ return array (
     
     'cabinet/edit' => 'cabinet/edit',
     'cabinet' => 'cabinet/index',
+    // Админпанель;
+    'admin' => 'admin/index',
     
     'contacts' => 'site/contact',
     
