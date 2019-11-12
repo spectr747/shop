@@ -2,6 +2,10 @@
 
 class CartController {
 
+    /**
+     * Метод используется для синхронного добавления,
+     * товаров в корзину
+     * / 
     public function actionAdd($id) 
     {
         // Добавляем товар в корзину
@@ -11,7 +15,7 @@ class CartController {
         $referrer = $_SERVER['HTTP_REFERER'];
         header("Location: $referrer");
     }
-    
+    */
     public function actionAddAjax($id) 
     {
         // Добавляем товар в корзину
