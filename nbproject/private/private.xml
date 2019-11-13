@@ -3,15 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp64/www/views/site/index.php</file>
-            <file>file:/C:/wamp64/www/controllers/SiteController.php</file>
+            <file>file:/C:/wamp64/www/views/admin_product/index.php</file>
             <file>file:/C:/wamp64/www/models/Product.php</file>
-            <file>file:/C:/wamp64/www/views/layouts/header.php</file>
-            <file>file:/C:/wamp64/www/components/Cart.php</file>
-            <file>file:/C:/wamp64/www/controllers/CartController.php</file>
-            <file>file:/C:/wamp64/www/models/User.php</file>
-            <file>file:/C:/wamp64/www/views/cart/index.php</file>
-            <file>file:/C:/wamp64/www/views/cart/checkout.php</file>
+            <file>file:/C:/wamp64/www/views/admin_product/delete.php</file>
+            <file>file:/C:/wamp64/www/controllers/AdminProductController.php</file>
+            <file>file:/C:/wamp64/www/config/routes.php</file>
+            <file>file:/C:/wamp64/www/views/admin_product/create.php</file>
+            <file>file:/C:/wamp64/www/views/admin_product/update.php</file>
         </group>
     </open-files>
 </project-private>
